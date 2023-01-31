@@ -737,12 +737,16 @@ body {
   letter-spacing: 0.01em;
   color: var(--contact-nav-color);
   position: relative;
+  outline: none;
+  box-shadow: none;
 }
 
 .information-form input,
 .information-form textarea {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  outline: none;
+  box-shadow: none;
 }
 
 .information-form input {
@@ -763,7 +767,8 @@ body {
   border: 1px solid var(--brand-color);
   cursor: pointer;
 }
-.information-form label:hover svg {
+.information-form label:hover svg,
+.information-form label:focus-within svg {
   fill: var(--brand-color);
 }
 
@@ -836,7 +841,7 @@ input[type="checkbox"]:checked + .checkbox-replace {
 .checkbox-replace > svg {
   position: relative;
   bottom: 3px;
-  right: 1.5px;
+  right: 0.5px;
 }
 
 .colored-terms {
